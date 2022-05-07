@@ -26,3 +26,15 @@
     transform: translate(-50%, -50%);
   }
 }
+.accordion-container {
+  margin-top: 2rem;
+}
+
+.equipments-list {
+  padding: 2rem 0 0 1rem;
+  color: $primary;
+  .equipments {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+}

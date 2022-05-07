@@ -121,4 +121,18 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+.accordion-container {
+  margin-top: 2rem;
+}
+
+.equipments-list {
+  padding: 2rem 0 0 1rem;
+  color: #ff6060;
+}
+
+.equipments-list .equipments {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
 /*# sourceMappingURL=lodging.css.map */

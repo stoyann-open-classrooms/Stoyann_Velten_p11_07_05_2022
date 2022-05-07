@@ -18,7 +18,7 @@ export default function Slider() {
       });
     } else if (slideAnim.index === 1) {
       setSlideAnim({
-        index: 5,
+        index: location.state.pictures.length,
         inProgress: true,
       });
     }
@@ -52,6 +52,7 @@ export default function Slider() {
           </div>
         );
       })}
+
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
     </div>

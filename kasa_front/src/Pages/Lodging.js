@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 import Slider from "../components/Slider";
 import LodgingHeader from "../components/LodgingHeader";
-
+import AccordionList from "../components/AccordionList";
 export default function Lodging() {
   const location = useLocation();
   console.log(location.state.tags);
@@ -22,6 +22,9 @@ export default function Lodging() {
           );
         })}
       </ul>
+      <div className="accordion-container">
+        <AccordionList />
+      </div>
     </div>
   );
 }
