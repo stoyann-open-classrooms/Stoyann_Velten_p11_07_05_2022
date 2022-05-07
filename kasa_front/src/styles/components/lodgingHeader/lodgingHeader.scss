@@ -1,0 +1,17 @@
+@import "../../Utils/reset";
+@import "../../Utils/variables";
+
+.lodging-header {
+  .lodging-header__title {
+    color: $primary;
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .lodging-header__subtitle {
+    color: $primary;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}

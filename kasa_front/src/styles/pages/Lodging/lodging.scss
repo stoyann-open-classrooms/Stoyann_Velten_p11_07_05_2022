@@ -5,3 +5,24 @@
 .main-lodging {
   margin: 0 2rem;
 }
+.tag-container {
+  display: flex;
+  margin-top: 1.2rem;
+}
+.tag {
+  background-color: $primary;
+  margin-right: 1rem;
+
+  color: white;
+  border-radius: 5px;
+  width: 8.5rem;
+  height: 1.8rem;
+  position: relative;
+  p {
+    position: absolute;
+    top: 50%;
+    font-size: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

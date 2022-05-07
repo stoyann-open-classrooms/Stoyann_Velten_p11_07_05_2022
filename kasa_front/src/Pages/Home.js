@@ -22,7 +22,7 @@ export default function Home() {
                 <div className="container_img"></div>
                 <img src={data.cover} alt="" />
 
-                <h2>{data.title}</h2>
+                <h2 className="title-card">{data.title}</h2>
               </LodgingCard>
             </Link>
           );
