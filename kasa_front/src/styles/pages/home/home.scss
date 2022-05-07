@@ -1,0 +1,21 @@
+@import "../../Utils/reset";
+@import "../../utils/variables";
+
+.home_main {
+  margin-bottom: 4rem;
+}
+.LodgingCard-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: $radius;
+  margin: 0 1rem;
+
+  img {
+    width: 100%;
+    border-radius: $radius;
+    height: 100%;
+    object-fit: cover;
+  }
+}

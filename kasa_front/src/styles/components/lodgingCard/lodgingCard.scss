@@ -1,0 +1,41 @@
+@import "../../Utils/reset";
+@import "../../Utils/variables";
+
+.LodgingCards {
+  display: flex;
+  flex-direction: column;
+  height: 34rem;
+  width: 34rem;
+  border-radius: $radius;
+  margin: 5.6rem 0;
+  background-color: $primary;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+
+  position: relative;
+  color: white;
+}
+.container_img {
+  position: absolute;
+  height: 34rem;
+  width: 34rem;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border-radius: $radius;
+  background-color: $primary;
+  mix-blend-mode: darken;
+}
+
+h2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 60%;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
