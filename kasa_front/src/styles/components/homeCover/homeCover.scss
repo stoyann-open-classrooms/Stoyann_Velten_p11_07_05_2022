@@ -1,10 +1,10 @@
 @import "../../Utils/variables";
 .home-cover {
-  margin: 0 1rem;
+  margin: 0 2rem;
   height: 11rem;
   border-radius: $radius;
-  background-image: url(../../../Assets/images/home-cover.png);
-  background-position: 60%;
+  background-image: url(../../../Assets/images/home-cover-mobil.png);
+
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -13,11 +13,11 @@
     color: white;
     position: absolute;
 
-    width: 60%;
+    width: 59%;
     left: 1rem;
     top: 3rem;
 
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 100;
   }
 }
