@@ -1,0 +1,112 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.accord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f7;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.accord-visible {
+  background-color: #ff6060;
+  border-radius: 5px;
+  height: 3rem;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+.accord-visible img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 20px;
+}
+
+.accord-toggle {
+  font-size: 1.2rem;
+  opacity: 0;
+  font-weight: 300;
+  -webkit-transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+}
+
+.accord-toggle p {
+  padding: 1.5rem;
+  pointer-events: none;
+  line-height: 2.1rem;
+  color: #ff6060;
+}
+
+.animated {
+  opacity: 1;
+  margin-bottom: 3em;
+  -webkit-transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+}
+/*# sourceMappingURL=accordionAbout.css.map */
