@@ -1,0 +1,17 @@
+// ----- Colors -----
+
+$primary: #ff6060;
+$grey: #f6f6f6;
+$white: #ffffff;
+$gradient: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
+// radius
+$radius: 1rem;
+
+// Responsive
+$bigPhone: 40.5rem;
+$tablet: 76.8rem;
+$desktop: 120rem;
