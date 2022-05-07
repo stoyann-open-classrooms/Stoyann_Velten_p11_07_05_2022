@@ -20,7 +20,7 @@ export default function Home() {
             >
               <LodgingCard props={data}>
                 <div className="container_img"></div>
-                {/* <img src={data.cover} alt="" /> */}
+                <img src={data.cover} alt="" />
 
                 <h2>{data.title}</h2>
               </LodgingCard>
