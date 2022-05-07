@@ -1,0 +1,30 @@
+@import "../Utils/reset";
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../utils/foreach";
+@import "../utils/animations";
+
+.main-error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 20rem;
+    color: $primary;
+    margin-top: 6rem;
+  }
+  .info-error {
+    font-size: 20px;
+    color: $primary;
+    margin-top: 4rem;
+  }
+  .info-link {
+    font-size: 16px;
+    color: $primary;
+    text-decoration: underline;
+    margin-top: 6rem;
+    font-weight: 400;
+  }
+}
