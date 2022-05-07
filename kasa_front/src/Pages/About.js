@@ -1,10 +1,11 @@
 import React from "react";
-
+import AboutCover from "../components/AboutCover";
 import AccordionAbout from "../components/AccordionAbout";
 import "../styles/pages/about/about.css";
 export default function About() {
   return (
     <main className="main-about">
+      <AboutCover />
       <AccordionAbout
         txt={
           "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."

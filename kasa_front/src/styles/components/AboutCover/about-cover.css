@@ -1,0 +1,53 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.about-cover {
+  height: 223px;
+  width: 100%;
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  background-image: url("../../../Assets/images/about-cover-mobil.png");
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=about-cover.css.map */
