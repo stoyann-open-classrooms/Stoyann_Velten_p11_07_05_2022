@@ -1,23 +1,25 @@
-@import "../Utils/reset";
-@import "../utils/variables";
-@import "../utils/mixins";
-@import "../utils/foreach";
-@import "../utils/animations";
+@import "../../Utils/reset";
+@import "../../utils/variables";
+@import "../../utils/mixins";
+@import "../../utils/foreach";
+@import "../../utils/animations";
 
 .main-error {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-top: 8.2rem;
 
   h1 {
-    font-size: 20rem;
+    font-size: 9rem;
     color: $primary;
     margin-top: 6rem;
   }
   .info-error {
-    font-size: 20px;
+    font-size: 1.8rem;
     color: $primary;
+    text-align: center;
     margin-top: 4rem;
   }
   .info-link {
