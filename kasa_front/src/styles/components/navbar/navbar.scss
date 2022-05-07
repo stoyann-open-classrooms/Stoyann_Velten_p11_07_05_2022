@@ -1,5 +1,6 @@
 @import "../../Utils/reset";
 @import "../../Utils/variables";
+@import "../../Utils/animations";
 
 header {
   padding: 2rem;
@@ -10,10 +11,13 @@ header {
   .header__logo {
     width: 12.5rem;
     cursor: pointer;
+    animation: flip-in-hor-top 0.9s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
   }
   .header__nav {
     ul {
       display: flex;
+      animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       li {
         &:nth-child(1) {
           margin-right: 1.2rem;
