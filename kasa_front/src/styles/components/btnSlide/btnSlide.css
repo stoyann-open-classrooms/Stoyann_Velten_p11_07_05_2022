@@ -40,32 +40,42 @@ button {
   cursor: pointer;
 }
 
-footer {
-  background-color: #000000;
-  height: 20rem;
-  width: 100vw;
-  color: white;
-  font-size: 1.2rem;
-  text-align: center;
+.btn-slide {
+  width: 80px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  cursor: pointer;
 }
 
-footer p {
-  margin-top: 2rem;
-  font-weight: 100;
+.btn-slide img {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-footer img {
-  margin-top: 6.2rem;
-  height: 4rem;
+.prev {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
 }
-/*# sourceMappingURL=footer.css.map */
+
+.next {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+/*# sourceMappingURL=btnSlide.css.map */

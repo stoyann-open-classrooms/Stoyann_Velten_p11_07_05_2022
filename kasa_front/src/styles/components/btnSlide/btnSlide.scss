@@ -1,0 +1,32 @@
+@import "../../Utils/reset";
+@import "../../Utils/variables";
+
+.btn-slide {
+  width: 80px;
+
+  border-radius: 50%;
+  background: transparent;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-slide img {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  object-fit: cover;
+}
+.prev {
+  top: 50%;
+  left: 0;
+  transform: translateY(-60%);
+}
+.next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-60%);
+}
