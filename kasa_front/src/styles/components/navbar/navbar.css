@@ -67,6 +67,7 @@ header .header__nav ul {
 header .header__nav ul li {
   cursor: pointer;
   font-size: 1.2rem;
+  font-weight: 100;
   color: #ff6060;
   text-transform: uppercase;
 }

@@ -3,8 +3,9 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Lodging from "./Pages/Lodging";
 import NotFound from "./Pages/NotFound";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer";
 
-import Header from "./components/Navbar/Header";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/logement/:slug" element={<Lodging />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 }
