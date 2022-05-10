@@ -41,7 +41,7 @@
   font-size: 1.2rem;
   opacity: 0;
   font-weight: 300;
-  margin-bottom: 2rem;
+
   transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
   p {
     padding: 1.5rem;
@@ -53,6 +53,6 @@
 
 .animated {
   opacity: 1;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
 }

@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/pages/Lodging/lodging.css";
 import { useLocation } from "react-router-dom";
-import star from "../Assets/icones/stars-icone.png";
+import star from "../Assets/icones/red-star.svg";
 import Slider from "../components/Slider";
 import LodgingHeader from "../components/LodgingHeader";
 import AccordionList from "../components/AccordionList";
 import AccordionAbout from "../components/AccordionAbout";
 export default function Lodging() {
   const location = useLocation();
-  console.log(location.state.tags);
+  console.log(location.state.rating);
   return (
     <div className="main-lodging">
       {" "}
@@ -25,7 +25,7 @@ export default function Lodging() {
       </ul>
       <div className="hote_container">
         <div className="hote-rate">
-          <img src={star} alt="" />
+          <img id="stars" src={star} alt="" />
           <img src={star} alt="" />
           <img src={star} alt="" />
           <img src={star} alt="" />

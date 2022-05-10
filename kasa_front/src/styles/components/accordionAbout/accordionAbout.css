@@ -92,7 +92,6 @@ button {
   font-size: 1.2rem;
   opacity: 0;
   font-weight: 300;
-  margin-bottom: 2rem;
   -webkit-transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
 }
@@ -106,7 +105,7 @@ button {
 
 .animated {
   opacity: 1;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   -webkit-transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
   transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
 }
