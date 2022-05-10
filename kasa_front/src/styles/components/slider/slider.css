@@ -121,4 +121,12 @@ button {
 .active-anim {
   opacity: 1;
 }
+
+.index {
+  z-index: 9999;
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  right: 47%;
+}
 /*# sourceMappingURL=slider.css.map */

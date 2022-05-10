@@ -37,6 +37,8 @@ export default function Slider() {
       });
     }
   };
+  console.log(location.state.pictures.length);
+
   return (
     <div className="container-slider">
       {location.state.pictures.map((obj, index) => {
@@ -55,6 +57,9 @@ export default function Slider() {
 
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+      <div className="index">
+        {slideAnim.index}/{location.state.pictures.length}
+      </div>
     </div>
   );
 }

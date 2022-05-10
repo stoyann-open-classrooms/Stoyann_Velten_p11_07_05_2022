@@ -26,6 +26,31 @@
     transform: translate(-50%, -50%);
   }
 }
+.hote_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.hote-info {
+  display: flex;
+  font-size: 1.2rem;
+  color: $primary;
+  align-items: center;
+  text-align: right;
+  p {
+    width: 50px;
+    margin-right: 1rem;
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+}
+
 .accordion-container {
   margin-top: 2rem;
 }

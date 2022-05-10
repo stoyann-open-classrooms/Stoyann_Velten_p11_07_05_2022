@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/pages/Lodging/lodging.css";
 import { useLocation } from "react-router-dom";
-
+import star from "../Assets/icones/stars-icone.png";
 import Slider from "../components/Slider";
 import LodgingHeader from "../components/LodgingHeader";
 import AccordionList from "../components/AccordionList";
@@ -23,6 +23,19 @@ export default function Lodging() {
           );
         })}
       </ul>
+      <div className="hote_container">
+        <div className="hote-rate">
+          <img src={star} alt="" />
+          <img src={star} alt="" />
+          <img src={star} alt="" />
+          <img src={star} alt="" />
+          <img src={star} alt="" />
+        </div>
+        <div className="hote-info">
+          <p>{location.state.host.name}</p>
+          <img src={location.state.host.picture} alt="" />
+        </div>
+      </div>
       <div className="accordion-container">
         <AccordionAbout
           txt={location.state.description}
