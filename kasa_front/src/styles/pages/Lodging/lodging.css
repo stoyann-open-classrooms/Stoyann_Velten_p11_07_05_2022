@@ -111,15 +111,12 @@ button {
   width: 8.5rem;
   height: 1.8rem;
   position: relative;
+  padding: 0.3rem;
 }
 
 .tag p {
-  position: absolute;
-  top: 50%;
   font-size: 1rem;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .hote_container {
@@ -171,5 +168,15 @@ button {
 .equipments-list .equipments {
   font-size: 1.2rem;
   margin-bottom: 5px;
+}
+
+.hote-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hote-rate li img {
+  height: 1.8rem;
 }
 /*# sourceMappingURL=lodging.css.map */
