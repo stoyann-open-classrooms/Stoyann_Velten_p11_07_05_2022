@@ -1,5 +1,6 @@
 @import "../../Utils/reset";
 @import "../../Utils/variables";
+@import "../../Utils/mixins";
 
 .LodgingCards {
   display: flex;
@@ -7,8 +8,9 @@
   height: 34rem;
   width: 34rem;
   border-radius: $radius;
-  margin: 5.6rem 0;
-
+  // margin: 5.6rem 0;
+  justify-content: space-between;
+  margin-top: 3rem;
   position: relative;
   color: white;
 }

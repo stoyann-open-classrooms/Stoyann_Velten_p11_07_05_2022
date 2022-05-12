@@ -1,8 +1,12 @@
 @import "../../Utils/reset";
 @import "../../utils/variables";
+@import "../../utils/mixins";
 
 .home_main {
-  margin-bottom: 4rem;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 .LodgingCard-container {
   position: relative;
@@ -10,7 +14,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: $radius;
-  margin: 0 1rem;
+  max-width: 1240px;
+  margin: 0 2rem;
+  @include tablet-and-higher {
+    background-color: $grey;
+    border-radius: $radius;
+    max-width: 1240px;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+  }
 
   img {
     width: 100%;

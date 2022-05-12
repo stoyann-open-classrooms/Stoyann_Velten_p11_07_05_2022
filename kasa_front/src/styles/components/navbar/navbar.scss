@@ -1,5 +1,7 @@
 @import "../../Utils/reset";
 @import "../../Utils/variables";
+@import "../../Utils/mixins";
+
 @import "../../Utils/animations";
 
 header {
@@ -7,6 +9,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  @include tablet-and-higher {
+    padding: 2rem 3.2rem;
+  }
 
   .header__logo {
     width: 12.5rem;
@@ -21,6 +28,9 @@ header {
       li {
         &:nth-child(1) {
           margin-right: 1.2rem;
+          @include tablet-and-higher {
+            margin-right: 5.7rem;
+          }
         }
         cursor: pointer;
 
@@ -28,6 +38,9 @@ header {
         font-weight: 100;
         color: $primary;
         text-transform: uppercase;
+        @include tablet-and-higher {
+          font-size: 2.4rem;
+        }
         &:hover {
           text-decoration: underline;
         }

@@ -51,7 +51,10 @@ button {
   height: 34rem;
   width: 34rem;
   border-radius: 1rem;
-  margin: 5.6rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
   position: relative;
   color: white;
 }

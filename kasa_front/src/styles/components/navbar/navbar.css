@@ -103,6 +103,14 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width: 770px) {
+  header {
+    padding: 2rem 3.2rem;
+  }
 }
 
 header .header__logo {
@@ -130,6 +138,18 @@ header .header__nav ul li {
 
 header .header__nav ul li:nth-child(1) {
   margin-right: 1.2rem;
+}
+
+@media screen and (min-width: 770px) {
+  header .header__nav ul li:nth-child(1) {
+    margin-right: 5.7rem;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  header .header__nav ul li {
+    font-size: 2.4rem;
+  }
 }
 
 header .header__nav ul li:hover {

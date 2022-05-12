@@ -1,3 +1,45 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .home-cover {
   margin: 0 2rem;
   height: 11rem;
@@ -8,6 +50,13 @@
   position: relative;
 }
 
+@media screen and (min-width: 770px) {
+  .home-cover {
+    height: 22.3rem;
+    background-image: url(../../../Assets/images/home_cover_big.png);
+  }
+}
+
 .home-cover h1 {
   color: white;
   position: absolute;
@@ -15,6 +64,21 @@
   left: 1rem;
   top: 3rem;
   font-size: 2.2rem;
-  font-weight: 100;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 770px) {
+  .home-cover h1 {
+    text-align: center;
+    width: 100%;
+    vertical-align: center;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    font-weight: 500;
+    font-size: 4.8rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 /*# sourceMappingURL=homeCover.css.map */

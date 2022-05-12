@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/pages/Lodging/lodging.css";
-import { useLocation, useState } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import redStar from "../Assets/icones/red-star-icone.png";
 import star from "../Assets/icones/stars-icone.png";
 import Slider from "../components/Slider";

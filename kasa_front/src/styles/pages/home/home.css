@@ -41,7 +41,15 @@ button {
 }
 
 .home_main {
-  margin-bottom: 4rem;
+  max-width: 1240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
 }
 
 .LodgingCard-container {
@@ -54,7 +62,18 @@ button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 1rem;
-  margin: 0 1rem;
+  max-width: 1240px;
+  margin: 0 2rem;
+}
+
+@media screen and (min-width: 770px) {
+  .LodgingCard-container {
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+    max-width: 1240px;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+  }
 }
 
 .LodgingCard-container img {
