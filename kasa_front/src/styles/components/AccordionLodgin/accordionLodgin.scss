@@ -5,7 +5,7 @@
 .accord {
   display: flex;
   flex-direction: column;
-
+  max-width: 1023px;
   height: auto;
   background-color: #f7f7f7;
   margin: auto;
@@ -23,11 +23,11 @@
 
   cursor: pointer;
   color: white;
-
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1.5rem;
   font-weight: 100;
 
@@ -38,15 +38,14 @@
 }
 
 .accord-toggle {
+  font-size: 1.2rem;
   opacity: 0;
   font-weight: 300;
 
   transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
   p {
     padding: 1.5rem;
-
     pointer-events: none;
-    font-size: 1.5rem;
     line-height: 2.1rem;
     color: $primary;
   }

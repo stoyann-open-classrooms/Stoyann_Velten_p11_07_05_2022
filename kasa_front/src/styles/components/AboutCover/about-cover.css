@@ -44,10 +44,17 @@ button {
   height: 223px;
   width: 100%;
   background-position: bottom center;
+  max-width: 1240px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
   background-image: url("../../../Assets/images/about-cover-mobil.png");
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 770px) {
+  .about-cover {
+    background-image: url("../../../Assets/images/about_cover_big.png");
+  }
 }
 /*# sourceMappingURL=about-cover.css.map */

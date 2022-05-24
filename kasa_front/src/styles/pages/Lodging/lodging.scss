@@ -1,13 +1,19 @@
 @import "../../Utils/reset";
 @import "../../Utils/variables";
+@import "../../Utils/mixins";
 @import "../../Utils/animations";
 
 .main-lodging {
-  margin: 0 2rem;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
 }
 .tag-container {
   display: flex;
   margin-top: 1.2rem;
+  padding: 0 2rem;
 }
 .tag {
   background-color: $primary;
@@ -31,6 +37,14 @@
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  padding: 0 2rem;
+  @include tablet-and-higher {
+    flex-direction: column;
+    width: 50%;
+    top: 405px;
+    right: -140px;
+    position: absolute;
+  }
 }
 .hote-info {
   display: flex;
@@ -38,6 +52,7 @@
   color: $primary;
   align-items: center;
   text-align: right;
+
   p {
     width: 50px;
     margin-right: 1rem;
@@ -52,11 +67,21 @@
 
 .accordion-container {
   margin-top: 2rem;
+  padding: 0 2rem;
+  @include tablet-and-higher {
+    display: flex;
+
+    .accord {
+      width: 50%;
+      max-width: 582px;
+    }
+  }
 }
 
 .equipments-list {
   padding: 2rem 0 0 1rem;
   color: $primary;
+
   .equipments {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -69,5 +94,14 @@
     img {
       height: 1.8rem;
     }
+  }
+}
+
+.lodging-top {
+  display: flex;
+  flex-direction: column;
+
+  hgroup {
+    padding: 0 2rem;
   }
 }

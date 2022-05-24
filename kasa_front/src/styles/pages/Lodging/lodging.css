@@ -93,7 +93,16 @@ button {
 }
 
 .main-lodging {
-  margin: 0 2rem;
+  max-width: 1240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  position: relative;
 }
 
 .tag-container {
@@ -101,6 +110,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1.2rem;
+  padding: 0 2rem;
 }
 
 .tag {
@@ -131,6 +141,20 @@ button {
           align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 770px) {
+  .hote_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    top: 405px;
+    right: -140px;
+    position: absolute;
+  }
 }
 
 .hote-info {
@@ -158,6 +182,19 @@ button {
 
 .accordion-container {
   margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 770px) {
+  .accordion-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .accordion-container .accord {
+    width: 50%;
+    max-width: 582px;
+  }
 }
 
 .equipments-list {
@@ -178,5 +215,19 @@ button {
 
 .hote-rate li img {
   height: 1.8rem;
+}
+
+.lodging-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lodging-top hgroup {
+  padding: 0 2rem;
 }
 /*# sourceMappingURL=lodging.css.map */

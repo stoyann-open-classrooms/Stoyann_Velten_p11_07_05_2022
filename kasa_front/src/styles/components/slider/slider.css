@@ -93,13 +93,19 @@ button {
 }
 
 .container-slider {
-  width: 80%;
-  height: 255px;
+  margin: 0 2rem;
+  height: 11rem;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
   position: relative;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 770px) {
+  .container-slider {
+    height: 40rem;
+  }
 }
 
 .slide {

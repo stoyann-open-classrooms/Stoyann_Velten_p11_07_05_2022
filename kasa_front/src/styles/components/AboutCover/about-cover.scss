@@ -1,15 +1,19 @@
 @import "../../Utils/reset";
 @import "../../Utils/variables";
+@import "../../Utils/mixins";
 
 .about-cover {
   height: 223px;
   width: 100%;
   background-position: bottom center;
-
+  max-width: 1240px;
   //   background-position: bottom center, 100px 135px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: $radius;
   background-image: url("../../../Assets/images/about-cover-mobil.png");
   margin-bottom: 2rem;
+  @include tablet-and-higher {
+    background-image: url("../../../Assets/images/about_cover_big.png");
+  }
 }

@@ -6,7 +6,7 @@ import star from "../Assets/icones/stars-icone.png";
 import Slider from "../components/Slider";
 import LodgingHeader from "../components/LodgingHeader";
 import AccordionList from "../components/AccordionList";
-import AccordionAbout from "../components/AccordionAbout";
+import AccordionLodging from "../components/AccordionLodging";
 export default function Lodging() {
   const location = useLocation();
 
@@ -14,17 +14,19 @@ export default function Lodging() {
     <main className="main-lodging">
       {" "}
       <Slider />
-      <LodgingHeader />
-      <ul className="tag-container">
-        {location.state.tags.map((tag) => {
-          return (
-            <li className="tag" key={tag + location.state.id}>
-              <p>{tag} </p>
-            </li>
-          );
-        })}
-      </ul>
-      <div className="hote_container">
+      <section className="lodging-top">
+        <LodgingHeader />
+        <ul className="tag-container">
+          {location.state.tags.map((tag) => {
+            return (
+              <li className="tag" key={tag + location.state.id}>
+                <p>{tag} </p>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+      <section className="hote_container">
         <ul className="hote-rate">
           <li>
             {" "}
@@ -51,14 +53,14 @@ export default function Lodging() {
           <p>{location.state.host.name}</p>
           <img src={location.state.host.picture} alt="" />
         </div>
-      </div>
-      <div className="accordion-container">
-        <AccordionAbout
+      </section>
+      <section className="accordion-container">
+        <AccordionLodging
           txt={location.state.description}
           title={"Description"}
         />
         <AccordionList />
-      </div>
+      </section>
     </main>
   );
 }

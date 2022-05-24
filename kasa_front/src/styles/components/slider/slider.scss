@@ -1,15 +1,19 @@
 @import "../../Utils/reset";
 @import "../../Utils/variables";
 @import "../../Utils/animations";
+@import "../../Utils/mixins";
 
 .container-slider {
-  width: 80%;
-  height: 255px;
+  margin: 0 2rem;
+  height: 11rem;
   border-radius: $radius;
   position: relative;
   overflow: hidden;
   position: relative;
   margin-bottom: 1.5rem;
+  @include tablet-and-higher {
+    height: 40rem;
+  }
 }
 
 .slide {
