@@ -147,12 +147,15 @@ button {
 @media screen and (min-width: 770px) {
   .hote_container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 50%;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    width: 30%;
     top: 405px;
-    right: -140px;
+    right: 0px;
     position: absolute;
   }
 }
@@ -169,6 +172,12 @@ button {
   text-align: right;
 }
 
+@media screen and (min-width: 770px) {
+  .hote-info {
+    font-size: 2rem;
+  }
+}
+
 .hote-info p {
   width: 50px;
   margin-right: 1rem;
@@ -180,20 +189,42 @@ button {
   border-radius: 50%;
 }
 
-.accordion-container {
-  margin-top: 2rem;
-  padding: 0 2rem;
+@media screen and (min-width: 770px) {
+  .hote-info img {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    right: 8%;
+    top: 6%;
+  }
 }
 
-@media screen and (min-width: 770px) {
+.accordion-container {
+  margin-top: 5rem;
+  padding: 0 1rem;
+  min-height: 200px;
+  position: relative;
+}
+
+@media screen and (min-width: 950px) {
   .accordion-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 0;
   }
   .accordion-container .accord {
     width: 50%;
-    max-width: 582px;
+    max-width: 580px;
+    position: absolute;
+  }
+  .accordion-container .accord:first-child {
+    top: 0;
+    right: 4px;
+    margin-left: 10px;
+  }
+  .accordion-container .accord-toggle {
+    height: 250px;
   }
 }
 
@@ -215,6 +246,12 @@ button {
 
 .hote-rate li img {
   height: 1.8rem;
+}
+
+@media screen and (min-width: 950px) {
+  .hote-rate li img {
+    height: 2.3rem;
+  }
 }
 
 .lodging-top {

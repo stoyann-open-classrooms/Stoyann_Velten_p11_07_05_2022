@@ -13,7 +13,7 @@
 }
 
 @mixin desktop-and-higher {
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     @content;
   }
 }

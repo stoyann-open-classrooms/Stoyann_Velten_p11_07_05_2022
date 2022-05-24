@@ -59,6 +59,7 @@ export default function Lodging() {
           txt={location.state.description}
           title={"Description"}
         />
+
         <AccordionList />
       </section>
     </main>

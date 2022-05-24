@@ -6,6 +6,7 @@ import rightArrow from "../Assets/icones/right-arrow.png";
 export default function BtnSlider({ direction, moveSlide }) {
   return (
     <button
+      alt="icone de naviguation"
       onClick={moveSlide}
       className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
     >

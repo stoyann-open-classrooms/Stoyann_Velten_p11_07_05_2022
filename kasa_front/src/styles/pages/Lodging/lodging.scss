@@ -39,10 +39,11 @@
   margin-bottom: 2rem;
   padding: 0 2rem;
   @include tablet-and-higher {
-    flex-direction: column;
-    width: 50%;
+    flex-direction: column-reverse;
+    justify-content: right;
+    width: 30%;
     top: 405px;
-    right: -140px;
+    right: 0px;
     position: absolute;
   }
 }
@@ -52,6 +53,9 @@
   color: $primary;
   align-items: center;
   text-align: right;
+  @include tablet-and-higher {
+    font-size: 2rem;
+  }
 
   p {
     width: 50px;
@@ -61,19 +65,42 @@
   img {
     width: 4rem;
     height: 4rem;
+
     border-radius: 50%;
+    @include tablet-and-higher {
+      width: 6rem;
+      height: 6rem;
+      position: absolute;
+      right: 8%;
+      top: 6%;
+    }
   }
 }
 
 .accordion-container {
-  margin-top: 2rem;
-  padding: 0 2rem;
-  @include tablet-and-higher {
+  margin-top: 5rem;
+  padding: 0 1rem;
+
+  min-height: 200px;
+  position: relative;
+
+  @include desktop-and-higher {
     display: flex;
+    top: 0;
 
     .accord {
       width: 50%;
-      max-width: 582px;
+      max-width: 580px;
+      position: absolute;
+
+      &:first-child {
+        top: 0;
+        right: 4px;
+        margin-left: 10px;
+      }
+    }
+    .accord-toggle {
+      height: 250px;
     }
   }
 }
@@ -93,6 +120,9 @@
   li {
     img {
       height: 1.8rem;
+      @include desktop-and-higher {
+        height: 2.3rem;
+      }
     }
   }
 }
@@ -100,7 +130,6 @@
 .lodging-top {
   display: flex;
   flex-direction: column;
-
   hgroup {
     padding: 0 2rem;
   }

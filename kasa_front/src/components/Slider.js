@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+
 import "../styles/components/slider/slider.css";
 import { useLocation } from "react-router-dom";
 import BtnSlider from "./BtnSlider";
@@ -10,6 +11,7 @@ export default function Slider() {
     index: 1,
     inProgress: false,
   });
+
   const prevSlide = () => {
     if (slideAnim.index !== 1) {
       setSlideAnim({
@@ -24,7 +26,6 @@ export default function Slider() {
     }
   };
   const nextSlide = () => {
-    console.log("next");
     if (slideAnim.index !== location.state.pictures.length) {
       setSlideAnim({
         index: slideAnim.index + 1,
@@ -37,7 +38,6 @@ export default function Slider() {
       });
     }
   };
-  console.log(location.state.pictures.length);
 
   return (
     <div className="container-slider">
@@ -54,9 +54,12 @@ export default function Slider() {
           </div>
         );
       })}
-
-      <BtnSlider moveSlide={nextSlide} direction={"next"} />
-      <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+      <div
+        className={location.state.pictures.length > 0 ? "visible" : "invisible"}
+      >
+        <BtnSlider moveSlide={nextSlide} direction={"next"} />
+        <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+      </div>
       <div className="index">
         {slideAnim.index}/{location.state.pictures.length}
       </div>
