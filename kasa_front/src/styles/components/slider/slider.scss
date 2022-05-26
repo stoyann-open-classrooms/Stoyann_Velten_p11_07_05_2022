@@ -38,4 +38,9 @@
   position: absolute;
   bottom: 2%;
   right: 47%;
+  font-size: large;
+  display: none;
+  @include tablet-and-higher {
+    display: block;
+  }
 }

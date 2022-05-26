@@ -134,5 +134,13 @@ button {
   position: absolute;
   bottom: 2%;
   right: 47%;
+  font-size: large;
+  display: none;
+}
+
+@media screen and (min-width: 770px) {
+  .index {
+    display: block;
+  }
 }
 /*# sourceMappingURL=slider.css.map */
