@@ -38,6 +38,7 @@ export default function Slider() {
       });
     }
   };
+  console.log(location.state.pictures.length);
 
   return (
     <div className="container-slider">
@@ -55,7 +56,9 @@ export default function Slider() {
         );
       })}
       <div
-        className={location.state.pictures.length > 0 ? "visible" : "invisible"}
+        className={
+          location.state.pictures.length === 1 ? "invisible" : "visible"
+        }
       >
         <BtnSlider moveSlide={nextSlide} direction={"next"} />
         <BtnSlider moveSlide={prevSlide} direction={"prev"} />
